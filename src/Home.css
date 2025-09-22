@@ -88,6 +88,10 @@
     overflow: visible;
     position: relative;
 }
+
+.page {
+    margin-left: 5em;
+}
 .big-card-inner {
     width: 900px;
     height: 530px;

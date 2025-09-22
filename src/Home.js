@@ -12,8 +12,8 @@ import quantum from "./images/qiskit3.png";
 const sections = [
     { id: "home", label: "Home" },
     { id: "education", label: "Education" },
-    { id: "projects", label: "Projects" },
     { id: "experience", label: "Experience" },
+    { id: "projects", label: "Projects" },
     { id : "articles", label: "Articles" },
 ];
 
@@ -157,6 +157,20 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <div id="experience" className="Experience">
+                <div className="experience-header">
+                    <span>Experience</span>
+                </div>
+                <div className="experience-content">
+                    {experienceData.map((item, idx) => (
+                        <div className="experience-item" key={idx}>
+                            <span className="experience-title">{item.title}</span>
+                            <span className="experience-subtitle">{item.sub}</span>
+                            <span className="experience-description">{item.description}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
             <div id="projects" className="Project">
                 <div className="projects-header">
                     <span>Projects</span>
@@ -195,25 +209,13 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div id="experience" className="Experience">
-                <div className="experience-header">
-                    <span>Experience</span>
-                </div>
-                <div className="experience-content">
-                    {experienceData.map((item, idx) => (
-                        <div className="experience-item" key={idx}>
-                            <span className="experience-title">{item.title}</span>
-                            <span className="experience-subtitle">{item.sub}</span>
-                            <span className="experience-description">{item.description}</span>
-                        </div>
-                    ))}
-                </div>
-            </div>
             <div id="articles" className="Articles">
                 <div className="projects-header">
                     <span>Articles</span>
                 </div>
-                <p className="articles-intro">In my spare time I enjoy writing articles exploring subjects around computer science and tech ethics, some of which have been published in University newspapers. A selection of these articles can be read below:</p>
+                <p className="articles-intro">In my spare time I enjoy writing articles exploring subjects around
+                    computer science and tech ethics, some of which have been published in University newspapers. A
+                    selection of these articles can be read below:</p>
                 <div className="article-content">
                     {articleData.map((item, idx) => (
                         <a className="article-item" key={idx} href={item.link}>
