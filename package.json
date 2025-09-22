@@ -2,7 +2,7 @@
   "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Thiaradealwis.github.io",
+  "homepage": "https://thiaradealwis.github.io",
   "dependencies": {
     "@heroui/card": "^2.2.24",
     "@heroui/react": "^2.8.4",
