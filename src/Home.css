@@ -1,0 +1,422 @@
+.Background {
+    background-color: #F4ECDC;
+    width: 100%;
+    height: 100%;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    flex-direction: column;
+    font-size: 2em;
+    font-weight: 200;
+    color: #0F4C5C;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.Title {
+    padding: 0;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing:3px;
+}
+
+.Subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    font-size:0.7em;
+    font-weight: 400;
+    letter-spacing:2px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #0F4C5C;
+    padding: 1em;
+}
+
+.Education {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.EducationWrapper {
+    display: flex;
+    width: 700px;
+    gap: 1em;
+    align-items: start;
+    padding-bottom: 2em;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #0F4C5C;
+}
+
+.education-title {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.education-grade {
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.gradIcon {
+    width: 60px;
+    height: 60px;
+}
+
+.Project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-card {
+    overflow: visible;
+    position: relative;
+}
+.big-card-inner {
+    width: 900px;
+    height: 530px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 38px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tags {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.tag {
+    background: #f0f0f5;
+    color: #333;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+}
+
+.tag:hover {
+    background: #e0e0eb;
+}
+
+.big-image-left {
+    position: absolute;
+    left: -280px;  /* sticks out to the left */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;         /* 25% of the card width */
+    width: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    z-index: 2;
+}
+
+.big-content {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: white;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.big-content-inner {
+    background-color: white;
+}
+
+.big-title {
+    background-color: white;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.big-subtitle {
+    background-color: white;
+    color: #666;
+    margin: 6px 0;
+}
+
+.big-description {
+    background-color: white;
+    margin: 12px 0 20px;
+    color: #444;
+}
+
+.thumb-strip {
+    display: flex;
+    gap: 16px;
+    overflow-x: visible;
+    padding-bottom: 8px;
+
+}
+
+.thumb-strip::-webkit-scrollbar {
+    height: 30px;
+}
+.thumb-strip::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.thumb-card {
+    flex: 0 0 auto;
+    width: 180px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.thumb-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.thumb-card.active {
+    outline: 3px solid #0077ff;
+}
+
+.thumb-image {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+}
+
+.thumb-title {
+    background-color: white;
+    margin: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.Experience {
+    padding-top: 5em;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Articles {
+    padding-top: 5em;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.articles-intro {
+    color: #0F4C5C;
+    font-size: 1.2rem;
+    padding: 1em 16em;
+}
+
+.experience-header {
+    padding-left: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #0F4C5C;
+    align-self: flex-start;
+}
+
+.projects-header {
+    padding-left: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #0F4C5C;
+    align-self: flex-start;
+}
+
+.experience-content {
+    padding: 5em 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5em;
+}
+
+.article-content {
+    padding: 5em 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5em;
+}
+
+.experience-item {
+    min-width: 400px;
+    color: #0F4C5C;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    white-space: pre-wrap;
+}
+
+.article-item {
+    min-width: 400px;
+    color: #0F4C5C;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    white-space: pre-wrap;
+    text-decoration: none;
+}
+
+.article-title:hover {
+    font-weight: 500;
+}
+
+.article-title {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.experience-title {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.experience-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.experience-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 15px;
+    text-align: left;
+}
+
+.menu-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+/* ===== Hamburger Icon ===== */
+.hamburger {
+    width: 32px;
+    height: 24px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #333;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===== Slide-out Menu ===== */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -220px;
+    width: 200px;
+    height: 100%;
+    background: #f7f8fa;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+}
+
+.menu.show {
+    left: 0;
+}
+
+.menu-item {
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.menu-item:hover {
+    background: #e6e6e6;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #555;
+}
