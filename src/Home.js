@@ -138,9 +138,9 @@ export default function Home() {
             <div id="home" className="Header">
                 <span className="Title">Thiara de Alwis</span>
                 <div className="Subtitle">
-                    <img src={cv} alt={"cv"} className={"icon"}/>
-                    <img src={linkedin} alt={"linkedin"} className={"icon"}/>
-                    <img src={github} alt={"github"} className={"icon"}/>
+                    <a href={"/Thiara.deAlwis-Resume.pdf"} download="Thiara_Dealwis_CV.pdf"><img src={cv} alt={"cv"} className={"icon"}/></a>
+                    <a href={"https://www.linkedin.com/in/thiara-de-alwis/"}><img src={linkedin} alt={"linkedin"} className={"icon"}/></a>
+                    <a href={"https://github.com/ThiaradeAlwis"}><img src={github} alt={"github"} className={"icon"}/></a>
                 </div>
             </div>
             <div id="education" className="Education">
